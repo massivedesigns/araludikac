@@ -10,6 +10,32 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+@media screen and (max-width: 767px) {
+    /* Hide the .actions.pagination in #main on mobile */
+    #main .actions.pagination {
+        display: none;
+    }
+
+    /* Show the .mobi section on mobile */
+    .mobi {
+        display: block;
+    }
+}
+
+/* Media query for desktop devices */
+@media screen and (min-width: 768px) {
+    /* Show the .actions.pagination in #main on desktop */
+    #main .actions.pagination {
+        display: flex;
+    }
+
+    /* Hide the .mobi section on desktop */
+    .mobi {
+        display: none;
+    }
+}
+</style>
 	</head>
 	<body class="is-preload">
 
@@ -587,72 +613,81 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 						<!-- Posts List -->
 							<section>
-								<ul class="posts">
+								<!-- <ul class="posts">
 									<li>
 										<article>
 											<header>
-												<!-- <h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time> -->
-											</header>
-											<!-- <a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a>  -->
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<!-- <h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time> -->
-											</header>
-											<!-- <a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a> -->
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<!-- <h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
+												<h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
 												<time class="published" datetime="2015-10-20">October 20, 2015</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a> -->
+											<a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a> 
 										</article>
 									</li>
 									<li>
 										<article>
-											<!-- <header>
+											<header>
+												<h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
+												<time class="published" datetime="2015-10-20">October 20, 2015</time>
+											</header>
+											<a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
+										</article>
+									</li>
+									<li>
+										<article>
+											<header>
+												<h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
+												<time class="published" datetime="2015-10-20">October 20, 2015</time>
+											</header>
+											<a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
+										</article>
+									</li>
+									<li>
+										<article>
+											<header>
 												<h3><a href="single.html">Convallis maximus nisl mattis nunc id lorem</a></h3>
 												<time class="published" datetime="2015-10-15">October 15, 2015</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic09.jpg" alt="" /></a> -->
+											<a href="single.html" class="image"><img src="images/pic09.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
 										<article>
-											<!-- <header>
+											<header>
 												<h3><a href="single.html">Euismod amet placerat vivamus porttitor</a></h3>
 												<time class="published" datetime="2015-10-10">October 10, 2015</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic10.jpg" alt="" /></a> -->
+											<a href="single.html" class="image"><img src="images/pic10.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
 										<article>
-											<!-- <header>
+											<header>
 												<h3><a href="single.html">Magna enim accumsan tortor cursus ultricies</a></h3>
 												<time class="published" datetime="2015-10-08">October 8, 2015</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic11.jpg" alt="" /></a> -->
+											<a href="single.html" class="image"><img src="images/pic11.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
 										<article>
-											<!-- <header>
+											<header>
 												<h3><a href="single.html">Congue ullam corper lorem ipsum dolor</a></h3>
 												<time class="published" datetime="2015-10-06">October 7, 2015</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic12.jpg" alt="" /></a> -->
+											<a href="single.html" class="image"><img src="images/pic12.jpg" alt="" /></a>
 										</article>
 									</li>
-								</ul>
+								</ul> -->
 							</section>
+
+							<!-- Pagination -->
+								<section class="mobi"> 
+									<ul class="actions pagination">
+										<li><a href="" class="disabled button large previous">Previous Page</a></li>
+										<li><a href="mlm.html" class="button large next">Next Page</a></li>
+									</ul>
+								</section>
+							
 
 						<!-- About -->
 							<section class="blurb">
